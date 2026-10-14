@@ -1,0 +1,13 @@
+data/
+.venv/
+__pycache__/
+*.pkl
+
+# Local review notes and execution logs
+PROJECT_REVIEW.md
+outputs/run_log.txt
+outputs/notebook_run_log.txt
+
+# Temporary notebook and Office files
+.ipynb_checkpoints/
+~$*

@@ -1,0 +1,11 @@
+Measure,PCA,Truncated SVD
+k used,100,100
+Fit time (s),0.44,0.41
+"Peak memory during fit (MB, total process RSS, sampled)",329.2,324.0
+"Size of stored factors (MB, calculated float64)",7.36,7.33
+Variance explained / relative reconstruction error,44.8% of variance (centred),"error 72.8% (44.6% of variance, uncentred)"
+"Hit rate at 10, factors alone",23.2%,22.5%
+"Hit rate at 10, factors + popularity prior (alpha=3)",36.4%,36.6%
+Best-seller baseline hit rate at 10,27.0%,27.0%
+Time to score products + eligible test customers (s),0.35,0.33
+"What component 1 represents, in words",Overall log purchase activity relative to the average customer; r=0.97 with row log-value sum,Common overall log purchase activity in the uncentred matrix; r=0.97 with row log-value sum

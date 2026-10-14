@@ -1,0 +1,147 @@
+{
+  "k_chosen": 100,
+  "alpha_chosen": 3.0,
+  "k_rule": "smallest k whose SVD validation hit rate is within 3% of the best; alpha = best on validation at that k",
+  "test_customers": 1913,
+  "baseline_hit10": 0.2702561421850497,
+  "baseline_ci": 0.019900848658552794,
+  "svd_hit10": 0.36644014636696287,
+  "svd_ci": 0.021592052882768064,
+  "svd_hit10_pure": 0.22530057501306847,
+  "pca_hit10": 0.36382645060115004,
+  "pca_ci": 0.02155924387569403,
+  "pca_hit10_pure": 0.23209618400418192,
+  "uncompressed_item_cosine_hit10": 0.29691583899634083,
+  "uncompressed_item_cosine_hit10_pure": 0.3214845791949817,
+  "uncompressed_time_s": 1.0615792274475098,
+  "svd_fit_s": 0.4090690612792969,
+  "svd_score_s": 0.3268725872039795,
+  "svd_peak_mb": 324.038656,
+  "pca_fit_s": 0.4383244514465332,
+  "pca_score_s": 0.3465712070465088,
+  "pca_peak_mb": 329.170944,
+  "svd_factors_mb": 7.3256,
+  "pca_factors_mb": 7.355088,
+  "dense_MB": 161.328848,
+  "sparse_MB": 4.98618,
+  "timing_scope": "Fit, all product top-10 similarities and scoring 1913 eligible test customers; excludes preprocessing and saving",
+  "factor_storage_scope": "Calculated float64 customer and product factor storage; factors are not saved",
+  "baseline_definition": "Rank products by distinct training customers; exclude products already bought",
+  "svd_rel_error": 0.7281372110046017,
+  "svd_explained_var": 0.4463449244205744,
+  "pca_explained_var": 0.44815672179400273,
+  "comp1": {
+    "svd": {
+      "corr_with_n_products": 0.8933079828858473,
+      "corr_with_volume": 0.967845527626681,
+      "top_products": [
+        "PACK OF 72 RETROSPOT CAKE CASES",
+        "WHITE HANGING HEART T-LIGHT HOLDER",
+        "JUMBO BAG RED RETROSPOT",
+        "LUNCH BAG RED RETROSPOT",
+        "60 TEATIME FAIRY CAKE CASES"
+      ],
+      "share_same_sign": 1.0
+    },
+    "pca": {
+      "corr_with_n_products": 0.8893920594252627,
+      "corr_with_volume": 0.9679160993183199,
+      "top_products": [
+        "PACK OF 72 RETROSPOT CAKE CASES",
+        "JUMBO BAG RED RETROSPOT",
+        "LUNCH BAG RED RETROSPOT",
+        "WHITE HANGING HEART T-LIGHT HOLDER",
+        "60 TEATIME FAIRY CAKE CASES"
+      ],
+      "share_same_sign": 0.9983722192078134
+    }
+  },
+  "also_bought_examples": [
+    {
+      "product": "WHITE HANGING HEART T-LIGHT HOLDER",
+      "also_bought": [
+        "RED HANGING HEART T-LIGHT HOLDER",
+        "CANDLEHOLDER PINK HANGING HEART",
+        "RED HANGING METAL STAR TLIGHT HLDR",
+        "COLOUR GLASS. STAR T-LIGHT HOLDER",
+        "JAZZ HEARTS SPIRAL NOTEPAD"
+      ]
+    },
+    {
+      "product": "REGENCY CAKESTAND 3 TIER",
+      "also_bought": [
+        "ROSES REGENCY TEACUP AND SAUCER",
+        "GREEN REGENCY TEACUP AND SAUCER",
+        "PINK REGENCY TEACUP AND SAUCER",
+        "REGENCY TEAPOT ROSES",
+        "SET OF 3 REGENCY CAKE TINS"
+      ]
+    },
+    {
+      "product": "PACK OF 72 RETROSPOT CAKE CASES",
+      "also_bought": [
+        "SET OF 72 RETROSPOT PAPER  DOILIES",
+        "PACK OF 72 SKULL CAKE CASES",
+        "60 TEATIME FAIRY CAKE CASES",
+        "PACK OF 60 PINK PAISLEY CAKE CASES",
+        "PACK OF 60 DINOSAUR CAKE CASES"
+      ]
+    }
+  ],
+  "sensitivity": [
+    {
+      "purchase_value": "log",
+      "svd_hit10_pure": 0.22530057501306847,
+      "svd_hit10_hybrid": 0.36644014636696287
+    },
+    {
+      "purchase_value": "binary",
+      "svd_hit10_pure": 0.2509147935180345,
+      "svd_hit10_hybrid": 0.37114479874542605
+    },
+    {
+      "purchase_value": "count",
+      "svd_hit10_pure": 0.13643491897543125,
+      "svd_hit10_hybrid": 0.26136957658128596
+    }
+  ],
+  "segments": [
+    {
+      "segment": 0,
+      "name": "Mixed gifts and baking shops",
+      "customers": 2514,
+      "share_pct": 46.0,
+      "avg_products": 58.8,
+      "avg_units": 1498.0,
+      "top_products": "VINTAGE SNAP CARDS; RETROSPOT TEA SET CERAMIC 11 PC; BAKING SET 9 PIECE RETROSPOT; REGENCY CAKESTAND 3 TIER",
+      "top_countries": "United Kingdom 91%, Germany 2%, France 2%"
+    },
+    {
+      "segment": 1,
+      "name": "Heart and home-decor shops",
+      "customers": 1650,
+      "share_pct": 30.2,
+      "avg_products": 72.3,
+      "avg_units": 1096.0,
+      "top_products": "HEART IVORY TRELLIS LARGE; WOODEN FRAME ANTIQUE WHITE; WOOD BLACK BOARD ANT WHITE FINISH; WHITE HANGING HEART T-LIGHT HOLDER; ZINC METAL HEART DECORATION; HEART OF WICKER LARGE",
+      "top_countries": "United Kingdom 97%, Cyprus 0%, Spain 0%"
+    },
+    {
+      "segment": 2,
+      "name": "Jumbo-bag buyers",
+      "customers": 1307,
+      "share_pct": 23.9,
+      "avg_products": 112.1,
+      "avg_units": 2787.0,
+      "top_products": "JUMBO BAG APPLES; JUMBO BAG SPACEBOY DESIGN; JUMBO STORAGE BAG SKULLS; JUMBO BAG PINK POLKADOT; JUMBO BAG OWLS; JUMBO BAG WOODLAND ANIMALS",
+      "top_countries": "United Kingdom 85%, Germany 3%, France 3%"
+    }
+  ],
+  "silhouette": {
+    "3": 0.38789232203065666,
+    "4": 0.34550952665946777,
+    "5": 0.3279679406261689,
+    "6": 0.3439494097031027
+  },
+  "clustering_space": "Two PCA components of unit-length SVD customer factors; k-means fitted on plotted coordinates"
+}

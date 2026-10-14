@@ -1,0 +1,7 @@
+rule,flagged_alone,removed_in_sequence,rows_after
+raw file,0,0,1067371
+cancellation invoice (starts with C),19494,19494,1047877
+quantity <= 0,22950,3457,1044420
+price <= 0,6207,2750,1041670
+non-product stock code,6093,4793,1036877
+missing customer ID,243007,234245,802632

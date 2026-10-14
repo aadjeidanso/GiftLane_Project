@@ -1,0 +1,20 @@
+{
+  "raw_rows": 1067371,
+  "rows_after_cleaning": 802632,
+  "cutoff": "2011-10-09",
+  "train_rows": 683670,
+  "test_rows": 118962,
+  "customers_in_train_matrix": 5471,
+  "products_total_in_train": 4529,
+  "products_kept_(>=10 customers)": 3686,
+  "shape": [
+    5471,
+    3686
+  ],
+  "nnz": 413691,
+  "sparsity_pct": 97.95,
+  "dense_MB": 161.3,
+  "sparse_MB": 4.99,
+  "test_customers_with_heldout": 1913,
+  "heldout_pairs": 44922
+}
